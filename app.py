@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, render_template, request, session, redirect, url_for
 import random
 
@@ -336,15 +336,8 @@ def game():
         game_over=session["game_over"],
         winner=winner
     )
-
-
 import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
-
-
->>>>>>> 8f06fced22340ac958a1d960cf6b67abf21fed9b
-def handler(request):
-    return app(request)
